@@ -18,6 +18,8 @@ function updateButtons() {
   removeColumnBtn.disabled = columnsLength <= 2;
 }
 
+updateButtons();
+
 appendRowBtn.addEventListener('click', () => {
   const fieldRows = field.querySelectorAll('tr');
   const newRow = fieldRows[0].cloneNode(true);
